@@ -1,0 +1,6 @@
+CC=gcc
+CFLAGS=-I.
+test: practice.o
+	$(CC) -o test practice.o
+clean:
+	-rm *.o $(objects) test
